@@ -4,10 +4,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from .convert_args_parser import ConvertArgsParser
-from .converter import Converter
-from .newest_csv_finder import NewestCsvFinder
-from .paths import Paths
+from convert_args_parser import ConvertArgsParser
+from converter import Converter
+from newest_csv_finder import NewestCsvFinder
+from paths import Paths
 
 
 class ConvertRunner():

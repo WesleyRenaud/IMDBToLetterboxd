@@ -6,10 +6,12 @@ Convert an IMDb ratings export CSV into Letterboxd’s import CSV format (stdlib
 
 ```text
 convert.py                 # thin CLI entrypoint
-imdb_to_letterboxd/        # one class per file (TorontoZooGuide-style)
+*.py                       # one class per file at repo root (TorontoZooGuide-style)
 input/                     # drop IMDb ratings CSVs here
 output/                    # Letterboxd import CSVs land here
 ```
+
+There is no nested package folder named like the project; modules live flat at the repo root.
 
 ## 1. Export from IMDb
 
@@ -36,12 +38,6 @@ From this folder:
 
 ```bash
 python3 convert.py
-```
-
-Or as a module:
-
-```bash
-python3 -m imdb_to_letterboxd
 ```
 
 That uses the newest `*.csv` in `input/` and writes a Letterboxd-ready file to `output/`.
@@ -82,4 +78,4 @@ Letterboxd’s import format docs: [letterboxd.com/about/importing-data](https:/
 
 - No scraping and no account credentials are required.
 - Letterboxd can also import some IMDb export files directly; this script produces their generic Letterboxd CSV format with half-star ratings.
-- Python modules under `imdb_to_letterboxd/` follow one class per file, with the class name matching the file stem.
+- Python modules at the repo root follow one class per file, with the class name matching the file stem.

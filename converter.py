@@ -3,11 +3,11 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-from .csv_reader import CsvReader
-from .field_map_builder import FieldMapBuilder
-from .letterboxd_fields import LetterboxdFields
-from .paths import Paths
-from .row_converter import RowConverter
+from csv_reader import CsvReader
+from field_map_builder import FieldMapBuilder
+from letterboxd_fields import LetterboxdFields
+from paths import Paths
+from row_converter import RowConverter
 
 
 class Converter():

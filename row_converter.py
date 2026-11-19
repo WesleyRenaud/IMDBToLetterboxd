@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from .field_map_builder import FieldMapBuilder
-from .imdb_id_normalizer import ImdbIdNormalizer
-from .rating_parser import RatingParser
-from .title_type_filter import TitleTypeFilter
-from .watched_date_parser import WatchedDateParser
-from .year_parser import YearParser
+from field_map_builder import FieldMapBuilder
+from imdb_id_normalizer import ImdbIdNormalizer
+from rating_parser import RatingParser
+from title_type_filter import TitleTypeFilter
+from watched_date_parser import WatchedDateParser
+from year_parser import YearParser
 
 
 class RowConverter():
