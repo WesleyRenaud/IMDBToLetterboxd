@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+venv/
+
+# Keep folder structure; ignore user ratings exports and converted CSVs
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
